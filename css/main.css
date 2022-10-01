@@ -44,3 +44,233 @@ body {
     width: 1170px;
   }
 }
+/* Start Header */
+header {
+  padding-top: 10px;
+  margin-bottom: 0;
+  /* margin-right: 0; */
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header .container .image {
+  width: 150px;
+}
+header .container .image img {
+  max-width: 100%;
+}
+header .container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header .container ul a {
+  text-decoration: none;
+  color: var(--font-color);
+  margin-left: 15px;
+}
+@media (max-width: 1200px) {
+  header .container ul a {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 992px) {
+  header .container .image {
+    width: 100px;
+  }
+  header .container {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  header .container ul a {
+    margin-left: 3px;
+  }
+}
+@media (min-width: 767px) {
+  header .container {
+    padding: 0;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+  }
+}
+@media (max-width: 767px) {
+  header .container .image {
+    width: 80px;
+  }
+  header .container {
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+/* End Header */
+/* Start Landing */
+.landing {
+  background-image: url(/img/landing.jpg);
+  background-size: cover;
+  height: calc(100vh - 50px);
+  /* height: 100vh; */
+  margin-top: 0;
+  position: relative;
+}
+.landing .text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+}
+@media (max-width: 1200px) {
+  .landing {
+    background-image: url(/img/landing2.jpg);
+  }
+  .landing .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.landing .container h2 {
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.landing .container h3 {
+  margin-top: -20px;
+  color: var(--main-color);
+}
+.landing .container p {
+  line-height: 1.5;
+  font-weight: 500;
+  color: var(--font-color);
+  width: fit-content;
+  margin-top: 10px 0 10px 0;
+}
+
+.landing .container input {
+  background-color: var(--main-color);
+  color: var(--section-background);
+  border-radius: 12px;
+  border-color: transparent;
+  padding: 10px 20px;
+}
+/* End Landing */
+/* Start About  */
+.about-fawry {
+  padding-top: calc(var(--section-padding) - 20px);
+  padding-bottom: calc(var(--section-padding));
+}
+.about-fawry .container {
+  padding-left: var(--section-padding);
+  padding-right: var(--section-padding);
+}
+.special-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.special-heading p {
+  position: relative;
+  border-radius: 12px;
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--main-color);
+  color: var(--section-background);
+  width: 40%;
+  height: 40%;
+  font-weight: bold;
+}
+
+.special-heading p::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--secondary-color);
+  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 53%;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* .special-heading {
+  color: var(--main-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: relative;
+}
+.special-heading p {
+  margin: 0;
+  padding: 0;
+}
+
+.special-heading::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--secondary-color);
+  width: 6%;
+  height: 5px;
+  left: 48%;
+  top: 35px;
+} */
+.about-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.about-content .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border: 2px solid #f6f6f6;
+  border-color: transparent transparent #f6f6f6;
+  border-radius: 20px;
+}
+.about-content img {
+  /* max-width: 400px; */
+  height: 50vh;
+  border-radius: 20px;
+}
+@media (max-width: 993px) {
+  .about-content img {
+    height: 40vh;
+  }
+}
+
+.about-content .card .text {
+  text-align: center;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+.about-content .card .text h4 {
+  font-size: 20px;
+  color: #444;
+}
+.about-content .card .text p {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+.about-content .card .text input {
+  background-color: var(--main-color);
+  color: var(--section-background);
+  border-color: transparent;
+  border-radius: 12px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
+/* End About  */
