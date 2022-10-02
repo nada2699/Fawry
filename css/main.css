@@ -164,7 +164,7 @@ header .container ul a {
 /* Start About  */
 .about-fawry {
   padding-top: calc(var(--section-padding) - 20px);
-  padding-bottom: calc(var(--section-padding));
+  padding-bottom: calc(var(--section-padding)-10px);
 }
 .about-fawry .container {
   padding-left: var(--section-padding);
@@ -183,8 +183,8 @@ header .container ul a {
   text-align: center;
   background-color: var(--main-color);
   color: var(--section-background);
-  width: 40%;
-  height: 40%;
+  width: 30%;
+  height: 30%;
   font-weight: bold;
 }
 
@@ -239,7 +239,6 @@ header .container ul a {
   border-radius: 20px;
 }
 .about-content img {
-  /* max-width: 400px; */
   height: 50vh;
   border-radius: 20px;
 }
@@ -274,3 +273,39 @@ header .container ul a {
   margin-bottom: 20px;
 }
 /* End About  */
+/* Start News */
+.news {
+  padding-top: calc(var(--section-padding) - 10px);
+  padding-bottom: var(--section-padding);
+}
+.news .news-content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.news .news-content .card img {
+  border-radius: 12px;
+  max-width: 100%;
+}
+.news .news-content .card .text {
+  padding: 10px;
+}
+.news .news-content .card .text h5 {
+  color: #777;
+  margin-top: -5px;
+}
+.news .news-content .card .text p {
+  color: #444;
+  line-height: 1.5;
+  margin-top: -5px;
+}
+.news .news-content .card .text input {
+  background-color: var(--main-color);
+  color: var(--section-background);
+  border-color: transparent;
+  border-radius: 12px;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+/* End News */
